@@ -226,6 +226,7 @@ import { mainnet, arbitrum, scroll, canto, goerli, arbitrumGoerli, scrollSepolia
 
 const blast = {
   chainId: 238,
+  id: 238,
   name: 'Blast',
   currency: 'ETH',
   explorerUrl: 'https://blastscan.io',
