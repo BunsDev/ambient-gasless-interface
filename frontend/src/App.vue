@@ -224,16 +224,16 @@ import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
 import { configureChains, createConfig, getPublicClient, getWalletClient, fetchToken, fetchBalance } from '@wagmi/core'
 import { mainnet, arbitrum, scroll, canto, goerli, arbitrumGoerli, scrollSepolia } from '@wagmi/core/chains'
 
-const blast = {
-  chainId: 238,
-  id: 238,
-  name: 'Blast',
-  currency: 'ETH',
-  explorerUrl: 'https://blastscan.io',
-  rpcUrl: "https://rpc.blastblockchain.com"
-}
+// const blast = {
+//   chainId: 238,
+//   id: 238,
+//   name: 'Blast',
+//   currency: 'ETH',
+//   explorerUrl: 'https://blastscan.io',
+//   rpcUrl: "https://rpc.blastblockchain.com"
+// }
   
-const chains = [mainnet, scroll, canto, goerli, blast, arbitrumGoerli, scrollSepolia]
+const chains = [mainnet, scroll, canto, goerli, arbitrumGoerli, scrollSepolia]
 const projectId = '8978c906351c8a4e3eccd85a700306ab'
 
 const wagmiConfig = defaultWagmiConfig({
