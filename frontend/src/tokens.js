@@ -93,6 +93,35 @@ export const TOKENS = {
             "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599/logo.png"
         }
     },
+     238: {
+        "0x0000000000000000000000000000000000000000": {
+            "name": "Native Ether",
+            "address": "0x0000000000000000000000000000000000000000",
+            "symbol": "ETH",
+            "nameLower": "native ether",
+            "symbolLower": "eth",
+            "decimals": 18,
+            "logoURI": "https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png"
+        },
+        "0x4300000000000000000000000000000000000003": {
+            "name": "USDB",
+            "address": "0x4300000000000000000000000000000000000003",
+            "symbol": "USDC",
+            "nameLower": "usdb",
+            "symbolLower": "usdb",
+            "decimals": 18,
+            "logoURI": "https://blastscan.io/token/images/usdb_32.png"
+        },
+        "0x20fe91f17ec9080e3cac2d688b4ecb48c5ac3a9c": {
+            "name": "YES",
+            "address": "0x20fe91f17ec9080e3cac2d688b4ecb48c5ac3a9c",
+            "symbol": "YES",
+            "nameLower": "yes",
+            "symbolLower": "yes",
+            "decimals": 18,
+            "logoURI": "https://assets.coingecko.com/coins/images/35657/standard/yes-money.jpeg"
+        }
+    },
     42161: {
         "0x0000000000000000000000000000000000000000": {
             "name": "Native Ether",
