@@ -75,10 +75,12 @@ export function dump(o) {
 }
 
 export function getSomeTokenForChain(chainId) {
-  if (chainId == 1)
-    return "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+  if (chainId == 1)  
+    return "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48" // USDC
   else if (chainId == 5)
     return "0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c"
+  else if (chainId == 238)
+    return "0x4300000000000000000000000000000000000003" // USDB
   else if (chainId == 7700)
     return "0xee602429ef7ece0a13e4ffe8dbc16e101049504c"
   else if (chainId == 42161)
