@@ -241,6 +241,8 @@ const wagmiConfig = defaultWagmiConfig({
 
 import chain1 from './assets/chains/1.webp'
 import chain5 from './assets/chains/5.webp'
+  // todo: update image
+import chain238 from './assets/chains/7700.webp'
 import chain7700 from './assets/chains/7700.webp'
 import chain42161 from './assets/chains/42161.webp'
 import chain421613 from './assets/chains/421613.webp'
@@ -250,6 +252,7 @@ import chain534352 from './assets/chains/534352.webp'
 const chainImages = {
   1: chain1,
   5: chain5,
+  238: chain238,
   7700: chain7700,
   42161: chain42161,
   421613: chain421613,
@@ -295,6 +298,8 @@ const RELAYERS = {
     acceptedTipTokens: {
       1: ["0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", ZERO_ADDRESS, "0xdac17f958d2ee523a2206206994597c13d831ec7", "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599", "0x6b175474e89094c44da98b954eedeac495271d0f"],
       5: ["0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c", ZERO_ADDRESS, "0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60", "0xc04b0d3107736c32e19f1c62b2af67be61d63a05"],
+      // todo: add USDB ?
+      238: [ZERO_ADDRESS],
       7700: ["0x80b5a32e4f032b2a058b4f29ec95eefeeb87adcd", ZERO_ADDRESS],
       42161: ["0xaf88d065e77c8cc2239327c5edb3a432268e5831", ZERO_ADDRESS, "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"],
       421613: ["0xc944b73fba33a773a4a07340333a3184a70af1ae", ZERO_ADDRESS, "0x5263e9d82352b8098cc811164c38915812bfc1e3", "0xc52f941486978a25fad837bb701d3025679780e4"],
