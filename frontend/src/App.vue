@@ -55,7 +55,7 @@
           <div v-if="chainError" class="text-danger" style="margin-top: 0.5rem">
             Your network is not supported!
             <br />
-            Switch to Ethereum, Scroll, Canto, or testnet to proceed.
+            Switch to Ethereum, Scroll, Canto, Blast, or testnet to proceed.
             <br />
             <b-button variant="primary" size="md" @click="w3modalNetworks" style="margin-top: 0.5rem;">Select
               network</b-button>
@@ -222,9 +222,9 @@ import {
 
 import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
 import { configureChains, createConfig, getPublicClient, getWalletClient, fetchToken, fetchBalance } from '@wagmi/core'
-import { mainnet, arbitrum, scroll, canto, goerli, arbitrumGoerli, scrollSepolia } from '@wagmi/core/chains'
+import { mainnet, arbitrum, scroll, canto, goerli, blast, arbitrumGoerli, scrollSepolia } from '@wagmi/core/chains'
 
-const chains = [mainnet, scroll, canto, goerli, arbitrumGoerli, scrollSepolia]
+const chains = [mainnet, scroll, canto, goerli, blast, arbitrumGoerli, scrollSepolia]
 const projectId = '8978c906351c8a4e3eccd85a700306ab'
 
 const wagmiConfig = defaultWagmiConfig({
@@ -1587,6 +1587,8 @@ export default {
         chainId = goerli.id
       else if (origInput.indexOf('etherscan') != -1)
         chainId = mainnet.id
+      else if (origInput.indexOf('blastscan') != -1)
+        chainId = blast.id
       else if (origInput.indexOf('sepolia.scrollscan') != -1 || origInput.indexOf('sepolia-blockscout.scroll.io') != -1)
         chainId = scrollSepolia.id
       else if (origInput.indexOf('scrollscan') != -1 || origInput.indexOf('scroll.io') != -1)
