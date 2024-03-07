@@ -225,7 +225,7 @@ import { configureChains, createConfig, getPublicClient, getWalletClient, fetchT
 import { mainnet, arbitrum, scroll, canto, goerli, arbitrumGoerli, scrollSepolia } from '@wagmi/core/chains'
 
 const blast = {
-  chainId: ChainId.BLAST,
+  chainId: 238,
   name: 'Blast',
   currency: 'ETH',
   explorerUrl: 'https://blastscan.io',
