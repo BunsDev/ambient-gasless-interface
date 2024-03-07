@@ -53,6 +53,26 @@ const MAINNET_CHAIN = {
   blockExplorer: "https://etherscan.io/",
 };
 
+// https://docs.ambient.finance/developers/deployed-contracts
+const BLAST_CHAIN = {
+  addrs: {
+    dex: "0xaAaaaAAAFfe404EE9433EEf0094b6382D81fb958",
+    query: "0xA3BD3bE19012De72190c885FB270beb93e36a8A7",
+    impact: "0x6A699AB45ADce02891E6115b81Dfb46CAa5efDb9"
+  },
+  // defaults: 420 for standard pools.
+  poolIndex: 420,
+  isTestNet: false,
+  chainId: "0xee", // 238
+  gridSize: 16,
+  proxyPaths: {
+    cold: 3,
+    long: 4,
+    liq: 2
+  },
+  blockExplorer: "https://blastscan.io/",
+};
+
 const SCROLL_CHAIN = {
   addrs: {
     dex: "0xaaaaAAAACB71BF2C8CaE522EA5fa455571A74106",
