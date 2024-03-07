@@ -19,6 +19,7 @@ import { decodeCrocPrice } from './utils.mjs';
 const TRANSPORTS = {
   1: { http: http("https://rpc.flashbots.net/?builder=flashbots&builder=f1b.io&builder=rsync&builder=beaverbuild.org&builder=builder0x69&builder=titan&builder=eigenphi&builder=boba-builder"), tx: http("https://rpc.flashbots.net/?builder=flashbots&builder=f1b.io&builder=rsync&builder=beaverbuild.org&builder=builder0x69&builder=titan&builder=eigenphi&builder=boba-builder"), chain: mainnet },
   5: { http: http(`https://goerli.infura.io/v3/${process.env.INFURA_KEY}`), tx: http(`https://goerli.infura.io/v3/${process.env.INFURA_KEY}`), chain: goerli },
+  238: { http: http(`https://rpc.blastblockchain.com`), tx: http(`https://blastscan.io`), chain: blast },
   7700: { http: http(`https://canto.gravitychain.io`), tx: http(`https://canto.gravitychain.io`), chain: canto },
   42161: { http: http(`https://arbitrum.llamarpc.com`), tx: http(`https://arbitrum.llamarpc.com`), chain: arbitrum },
   421613: { http: http(`https://rpc.goerli.arbitrum.gateway.fm`), tx: http(`https://rpc.goerli.arbitrum.gateway.fm`), chain: arbitrumGoerli },
@@ -31,6 +32,8 @@ const RELAY_SPEC = {
   tipTokens: {
     1: ["0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", ZERO_ADDRESS, "0xdac17f958d2ee523a2206206994597c13d831ec7", "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599", "0x6b175474e89094c44da98b954eedeac495271d0f"],
     5: [ZERO_ADDRESS, "0xd87ba7a50b2e7e660f678a895e4b72e7cb4ccd9c", "0xdc31Ee1784292379Fbb2964b3B9C4124D8F89C60", "0xc04b0d3107736c32e19f1c62b2af67be61d63a05"],
+    // blast: USDB
+    238: [ZERO_ADDRESS, "0x4300000000000000000000000000000000000003"],
     7700: [ZERO_ADDRESS, "0x80b5a32e4f032b2a058b4f29ec95eefeeb87adcd"],
     42161: [ZERO_ADDRESS, "0xaf88d065e77c8cc2239327c5edb3a432268e5831", "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9", "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"],
     421613: [ZERO_ADDRESS, "0xc944b73fba33a773a4a07340333a3184a70af1ae", "0x5263e9d82352b8098cc811164c38915812bfc1e3", "0xc52f941486978a25fad837bb701d3025679780e4"],
